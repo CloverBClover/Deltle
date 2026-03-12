@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 <meta charset="UTF-8">
-<title>Undertale Random</title>
+<title>Undertale Main Random</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Undertale Random</h1>
+<h1>Undertale Main Random</h1>
 
 <input id="guess-input" placeholder="Character name">
 <button id="guess-btn">Guess</button>
 
 <div class="header-row">
 <div>Name</div>
-<div>Light/Dark</div>
+<div>Species</div>
 <div>First Seen</div>
 <div>Role</div>
 <div>Gender</div>
@@ -25,12 +23,18 @@
 
 <div id="board"></div>
 
-<script>
-const MODE="random";
-</script>
+<div id="resultMenu">
+<h2 id="resultText"></h2>
+<p id="answerText"></p>
+<button onclick="playAgain()">Another Random</button>
+<a href="index.html"><button>Main Menu</button></a>
+</div>
 
-<script src="ut_characters.js"></script>
-<script src="ut_script.js"></script>
+<script>
+const list="ut_main_characters.js";
+const mode="random";
+</script>
+<script src="game.js"></script>
 
 </body>
 </html>
