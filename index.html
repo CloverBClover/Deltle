@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Deltarune Character Guess</title>
@@ -8,25 +9,18 @@
 
 <body>
 
-<div id="start-screen">
-<h1>DELTARUNE GUESS</h1>
+<div class="center">
+<h1>DELTARUNE CHARACTER GUESS</h1>
 
-<button onclick="startGame('daily')">Daily</button>
-<button onclick="startGame('random')">Random</button>
-</div>
+<a href="daily.html">
+<button>Daily</button>
+</a>
 
-<div id="game" style="display:none">
-
-<input id="guess-input" placeholder="Character name">
-
-<button onclick="submitGuess()">Guess</button>
-
-<div id="board"></div>
+<a href="random.html">
+<button>Random</button>
+</a>
 
 </div>
-
-<script src="characters.js"></script>
-<script src="script.js"></script>
 
 </body>
 </html>
