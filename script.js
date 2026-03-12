@@ -1,24 +1,20 @@
 let answer;
 
-const startScreen = document.getElementById("start-screen");
-const gameScreen = document.getElementById("game-screen");
 const board = document.getElementById("board");
 const guessInput = document.getElementById("guess-input");
+const guessBtn = document.getElementById("guess-btn");
 
-document.getElementById("daily-btn").onclick = () => startGame("daily");
-document.getElementById("random-btn").onclick = () => startGame("random");
-document.getElementById("guess-btn").onclick = submitGuess;
+guessBtn.onclick = submitGuess;
 
-function startGame(mode){
+startGame();
 
-startScreen.style.display = "none";
-gameScreen.style.display = "block";
+function startGame(){
 
-if(mode === "random"){
+if(MODE === "random"){
 answer = characters[Math.floor(Math.random()*characters.length)];
 }
 
-if(mode === "daily"){
+if(MODE === "daily"){
 let day = Math.floor(Date.now()/86400000);
 answer = characters[day % characters.length];
 }
