@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Deltarune Character Guess</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="start-screen">
+<h1>DELTARUNE GUESS</h1>
+
+<button onclick="startGame('daily')">Daily</button>
+<button onclick="startGame('random')">Random</button>
+</div>
+
+<div id="game" style="display:none">
+
+<input id="guess-input" placeholder="Character name">
+
+<button onclick="submitGuess()">Guess</button>
+
+<div id="board"></div>
+
+</div>
+
+<script src="characters.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
