@@ -44,8 +44,8 @@ row.className="row";
 row.appendChild(makeCell(guess.name,guess.name===answer.name));
 
 row.appendChild(makeCell(
-guess.lightner,
-guess.lightner===answer.lightner
+guess.species,
+guess.species===answer.species
 ));
 
 row.appendChild(comparePlace(guess.place));
