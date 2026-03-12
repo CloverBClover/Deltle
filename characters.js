@@ -13,7 +13,7 @@ undertale:false
 name:"SUSIE",
 lightner:"Lightner",
 chapter:1,
-role:["Party"],
+role:["Party", "Enemy"],
 gender:"Female",
 undertale:false
 },
@@ -22,7 +22,7 @@ undertale:false
 name:"RALSEI",
 lightner:"Darkner",
 chapter:1,
-role:["Party","Prince"],
+role:["Party"],
 gender:"Male",
 undertale:false
 },
