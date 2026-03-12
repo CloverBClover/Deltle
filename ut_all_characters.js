@@ -73,30 +73,12 @@ deltarune:true
 },
 
 {
-name:"METTATON",
-species:"Monster",
-place:6,
-role:["Boss"],
-gender:"Male",
-deltarune:false
-},
-
-{
 name:"ASGORE",
 species:"Monster",
 place:7,
 role:["Boss"],
 gender:"Male",
 deltarune:true
-},
-
-{
-name:"FLOWEY",
-species:"Other",
-place:1,
-role:["Boss"],
-gender:"Unknown",
-deltarune:false
 }
 
 ];
